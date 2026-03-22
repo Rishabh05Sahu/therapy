@@ -1,7 +1,5 @@
 import { SiteNavbar } from "@/components/molecules/navigation/site-navbar";
-import { BlogHeroSection } from "@/components/sections/blogs/blog-hero-section";
 import { BlogFilterSection } from "@/components/sections/blogs/blog-filter-section";
-import { FooterCtaSection } from "@/components/sections/shared/footer-cta-section";
 import { getBlogs } from "@/services/blog.service";
 
 export default async function BlogsPage() {
@@ -9,12 +7,19 @@ export default async function BlogsPage() {
 
   return (
     <main>
-      <div className="relative">
+      <div className="section-dark pb-16 pt-28 md:pt-36">
         <SiteNavbar />
-        <BlogHeroSection />
+        <div className="container-custom pt-10">
+          <h1 className="text-4xl font-semibold text-white md:text-6xl">
+            Blogs
+          </h1>
+          <p className="mt-4 max-w-2xl text-white/70">
+            Insights, reflections, and practical support for emotional wellness.
+          </p>
+        </div>
       </div>
-      <BlogFilterSection initialPosts={posts as any} />
-      <FooterCtaSection />
+
+      <BlogFilterSection initialPosts={posts} />
     </main>
   );
 }

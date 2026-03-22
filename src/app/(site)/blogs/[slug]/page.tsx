@@ -46,7 +46,9 @@ export default async function BlogDetailPage({
     getFeaturedBlogs(),
   ]);
 
-  if (!post) notFound();
+  if (!post) {
+    notFound();
+  }
 
   return (
     <main>
@@ -106,12 +108,12 @@ export default async function BlogDetailPage({
               </div>
             </article>
 
-            <BlogSidebar post={post as any} featuredPosts={featuredPosts as any} />
+            <BlogSidebar post={post} featuredPosts={featuredPosts} />
           </div>
         </Container>
       </section>
 
-      <RelatedPostsSection posts={relatedPosts as any} />
+      <RelatedPostsSection posts={relatedPosts} />
     </main>
   );
 }
