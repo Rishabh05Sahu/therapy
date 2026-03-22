@@ -11,6 +11,8 @@ import {
   getRelatedBlogs,
 } from "@/services/blog.service";
 
+export const dynamic = "force-dynamic";
+
 type BlogDetailPageProps = {
   params: Promise<{
     slug: string;

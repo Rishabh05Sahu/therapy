@@ -2,6 +2,8 @@ import { SiteNavbar } from "@/components/molecules/navigation/site-navbar";
 import { BlogFilterSection } from "@/components/sections/blogs/blog-filter-section";
 import { getBlogs } from "@/services/blog.service";
 
+export const dynamic = "force-dynamic";
+
 export default async function BlogsPage() {
   const posts = await getBlogs();
 
