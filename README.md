@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Therapy & Counselling Website
 
-## Getting Started
+A full-stack therapy and counselling website built with **Next.js**, **TypeScript**, **Tailwind CSS**, **shadcn/ui**, **Framer Motion**, and **MongoDB**.
 
-First, run the development server:
+## Features
+
+- Responsive landing page based on the provided design
+- Hero, promise, services, benefits, testimonials, team, blog, FAQ, and footer CTA sections
+- Dynamic blog listing page
+- Dynamic blog detail page
+- Tag-based blog filtering
+- Team and testimonial sections powered by MongoDB
+- Newsletter subscription API
+- Mailchimp-ready newsletter integration
+- Book a Session CTA support
+- Loading, not-found, and error states
+- Seed API for populating demo data
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- MongoDB + Mongoose
+- Embla Carousel
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+src/
+  app/
+  components/
+    atoms/
+    molecules/
+    organisms/
+    sections/
+  data/
+  lib/
+  models/
+  services/
